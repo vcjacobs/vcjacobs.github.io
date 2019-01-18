@@ -1,1 +1,0 @@
-# vcjacobs.github.io
