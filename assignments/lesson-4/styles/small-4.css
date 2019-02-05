@@ -29,16 +29,17 @@ nav {
     padding-left: 6em;
 }
 
-
-
 nav a:link {
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #d8e5ea;
-    text-decoration:
-    border-color: #d8e5ea;
+    background-color: #c4a420;
+    text-decoration: none;
+}
+
+nav a:active {
+    background-color: #c4a420;
 }
 
 /*nav ul {
