@@ -8,6 +8,7 @@ header {
     background-color: #43c0f6;
     border: 1px solid #bbb;
     box-shadow: 0 0 30px #777;
+    padding: 50px;
     text-align: center;
 }
 
@@ -41,11 +42,21 @@ nav a:hover {
 nav a:active {
     background-color: #c4a420;
 }
-/*nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
+
+ul {
     list-style-type: none;
-    */
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 10px;
+    max-width: 650px;
+    
+}
+nav ul {
+    list-style-type: none;
+}
+
 /* for small exceptions, stuff I want ONLY on a small view */
     @media screen and (max-width: 600px) {}
