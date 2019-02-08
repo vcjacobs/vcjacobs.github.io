@@ -1,11 +1,18 @@
-@media screen and (max-width: 600px) {
-li {
-    float: left:
-}
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    list-style-type: none;
-}
+@media screen and (min-width: 600px) {
+    nav {
+        background-color: #F5ce28;
+        font-size: 1.2em;
+        line-height: 3em;
+        margin-top: -4.5em;
+        padding-left: 6em;
+    }
+    li {
+        float: left:
+    }
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        list-style-type: none;
+    }
 }
