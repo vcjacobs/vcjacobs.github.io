@@ -1,31 +1,23 @@
 @media screen and (min-width: 640px) {
     /*header styles*/
-    
-
     /*nav bar styles*/
     nav h2 {
         display: none;
     }
-
-    
-    
     nav ul {
         display: flex;
         flex-wrap: wrap;
     }
-    
 }
 
 @media screen and (min-width: 755px) {
     header img {
         height: 200px;
     }
-    
-
-}   
+}
 
 @media screen and (min-width: 570px) {
-header {
-    font-size: 1.5em;
-} 
+    header {
+        font-size: 1.5em;
+    }
 }
