@@ -65,6 +65,77 @@ li a.current-page {
     background-color: #c4a420;
 }
 
+/*main styles*/
+
+main {
+    padding: 5px;
+}
+
+.town-name {
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+/* 5 day forecast styles*/
+
+.five-day-forecast {
+    text-align: center;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    margin: auto;
+}
+
+th {
+    background-color: #f81b84;
+    color: #f2eee2;
+}
+
+td {
+    vertical-align: bottom;
+}
+
+.forecast-image {
+    width: 75px;
+}
+
+#sunglasses {
+    margin-bottom: 1em;
+}
+
+/*article styles*/
+
+article img {
+    width: 33%;
+    float: left;
+}
+
+/*footer styles*/
+
+footer {
+    background-color: #43c0f6;
+    color: black;
+    margin: .5em;
+    padding: 5px;
+    justify-content: space-between;
+}    
+
+#map {
+    width: 98%;
+    
+}
+
 /* for small exceptions, stuff I want ONLY on a small view */
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    .five-day-forecast {
+        display: none
+    }
+}
