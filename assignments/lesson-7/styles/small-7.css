@@ -1,0 +1,163 @@
+body {
+    background-color: #f2eee2;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Vidaloka', serif;
+}
+
+/* Header styles*/
+
+header {
+    background-color: #43c0f6;
+    text-align: center;
+    height: 150px;
+    padding: 10px;
+    line-height: 32px;
+}
+
+header img {
+    height: 150px;
+    float: left;
+}
+
+header p {
+    line-height: 20px;
+}
+
+/* Nav bar styles*/
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none; 
+    font-size: 1.3em;
+}
+
+nav {
+    background-color: #F5ce28;
+}
+
+nav h2 {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*text-align: center;*/
+    font-size: 1.2em;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+li a {
+    display: block;
+    padding: 10px;
+}
+
+li a.current-page {
+    background-color: #c4a420;
+}
+
+/*main styles*/
+
+main {
+    padding: 5px;
+}
+
+.town-name {
+    text-align: center;
+    font-size: 1.75em;
+}
+
+figure {
+    margin: 0;
+}
+
+.hero-image {
+    width: 100%;
+
+}
+
+/* 5 day forecast styles*/
+
+.five-day-forecast {
+    text-align: center;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    margin: auto;
+}
+
+th {
+    background-color: #f81b84;
+    color: #f2eee2;
+}
+
+td {
+    vertical-align: bottom;
+}
+
+.forecast-image {
+    width: 75px;
+}
+
+#sunglasses {
+    margin-bottom: 1em;
+}
+
+/*article styles*/
+
+article img {
+    width: 33%;
+    float: left;
+}
+
+/*footer styles*/
+
+footer {
+    background-color: #43c0f6;
+    color: black;
+    margin: .5em;
+    padding: 5px;
+    justify-content: space-between;
+}    
+
+#map {
+    width: 98%;
+    
+}
+/* Clearfix: Force and Element not to collapse*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* for small exceptions, stuff I want ONLY on a small view */
+
+@media screen and (max-width: 600px) {
+    .five-day-forecast {
+        display: none
+    }
+}
