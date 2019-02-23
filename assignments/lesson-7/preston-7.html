@@ -31,7 +31,7 @@
     </nav>
     <main>
         <h2 class="town-name">Preston, ID</h2>
-        <section>
+        <section class="banner">
             <figure>
                 <img src="images/cit230_image_franklinLarge_50KB.jpg" alt="Franklin" class="hero-image" sizes="100vw"
                     srcset="images/cit230_image_franklinSmall_med_35KB.jpg 600w,
@@ -41,7 +41,9 @@
             </figure>
             <div class="weather-summary">
                 <h3>Weather Summary</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Temperture: 20&deg;</p>
+                <p>Wind Speed: SSW 10 mph</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
             </div>
         </section>
         <section>
@@ -107,6 +109,7 @@ Quis consectetur tempor sunt laboris ullamco enim dolore. Consectetur esse cillu
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
