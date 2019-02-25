@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Table Build</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/tablestyles.css">
 </head>
 <body>
   <main>
       <table>
           <thead>
               <tr>
-                  <td>ACME Wilderness</td>
+                  <td colspan="3">ACME Wilderness</td>
               </tr>
           </thead>
           <tbody>
@@ -21,9 +21,21 @@
                   <th>Sales</th>
                   <th>Sales Goal</th>
               </tr>
-
+              <tr>
+                  <td>August</td>
+                  <td>$3,590</td>
+                  <td>$4,000</td>
+              </tr>
+              <tr>
+                  <td>Black Friday</td>
+                  <td colspan="2">$3,200</td>
+              </tr>
           </tbody>
-          <tfoot></tfoot>
+          <tfoot>
+              <tr>
+                  <td>compiled 123123213</td>
+              </tr>
+          </tfoot>
       </table>
   </main>  
 </body>
