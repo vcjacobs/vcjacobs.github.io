@@ -17,14 +17,11 @@ header {
     padding: 10px;
     line-height: 32px;
     font-size: 1.15em;
-    /*display: flex;
-    flex-flow: row wrap;*/
 }
 
 header img {
     height: 150px;
     float: left;
-    /*position: relative;*/
 }
 
 header p {
@@ -55,7 +52,6 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /*text-align: center;*/
     font-size: 1.2em;
 }
 
@@ -73,7 +69,7 @@ nav a:hover {
 }
 
 li a {
-    display: block;
+    display: flex;
     padding: 10px;
 }
 

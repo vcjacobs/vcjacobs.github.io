@@ -2,4 +2,7 @@
     .grid {
         grid-template-columns: 1fr 1fr;
     }
+    li a {
+        padding: 10px 6.5px;
+    }
 }
