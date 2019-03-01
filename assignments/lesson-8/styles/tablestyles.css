@@ -5,6 +5,10 @@ table, tr, td, th {
     padding: .6em 1em;
 }
 
+table{
+    box-shadow: 10px 10px 20px #628ca6;
+}
+
 thead td {
     background-color: #7fb9c2;
     font-size: 1.75em;
