@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston Town Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka">
+    <link rel="stylesheet" href="styles/small-7.css">
+    <link rel="stylesheet" href="styles/large-7.css">
+    <link rel="stylesheet" href="styles/medium-7.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/site-logo-girl-resized.png" alt="site logo">
+        <h1>What to Wear Weather</h1>
+        <p class="motto">What should you wear today based on the weather?</p>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="preston-7.html">Home</a></li>
+            <li><a class="current-page" href="preston-7.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishahaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="town-name">Preston, ID</h2>
+        <section class="banner">
+            <figure>
+                <img src="images/cit230_image_franklinLarge_50KB.jpg" alt="Franklin" class="hero-image" sizes="100vw"
+                    srcset="images/cit230_image_franklinSmall_med_35KB.jpg 600w,
+                            images/cit230_image_franklinLarge_50KB.jpg 1200w 
+                            "
+                >
+            </figure>
+            <div class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Temperture: 20&deg;</p>
+                <p>Wind Speed: SSW 10 mph</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+            </div>
+        </section>
+        <section>
+            <div class="five-day-forecast">
+                <h3>5 Day Forecast</h3>
+                <table>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                    </tr>
+                    <tr>
+                        <td><img src="images/bw-long-sleeve-resized.png" alt="long sleeve shirt" class="forecast-image"><br>45&deg;</td>
+                        <td><img src="images/solid-black-sunglasses.png" alt="sunglasses" class="forecast-image" id="sunglasses"><br>89&deg;</td>
+                        <td><img src="images/simple-umbrella-resized.png" alt="umbrella" class="forecast-image"><br>42&deg;</td>
+                        <td><img src="images/bw-shirt-resized.png" alt="t-shirt" class="forecast-image"><br>74&deg;</td>
+                        <td><img src="images/bw-sweater-resized.png" alt="sweater" class="forecast-image"><br>38&deg;</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <article class="middle-section">
+            <div class="article-text">
+                <h3>Article Title</h3>
+                <h4>Author's name</h4>
+                <div class="article-image"><img src="images/cloudy-sky-resized-15KB.jpg" alt="article-image"></div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nemo velit suscipit, cum ipsum
+                    nisi quisquam iure veniam, dolores officiis, eaque voluptas quod esse tempora obcaecati? Unde iure
+                    reprehenderit voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem incidunt 
+                    commodi praesentium culpa? Tempore laborum dolore hic dolorum atque, voluptatibus nemo a nam officia
+                    placeat amet, sit debitis, iste aspernatur? Esse ea ullamco laborum est consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nemo velit suscipit, cum ipsum
+                    nisi quisquam iure veniam, dolores officiis, eaque voluptas quod esse tempora obcaecati? Unde iure
+                    reprehenderit voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem incidunt 
+                    commodi praesentium culpa? Tempore laborum dolore hic dolorum atque, voluptatibus nemo a nam officia
+                    placeat amet, sit debitis, iste aspernatur? Esse ea ullamco laborum est consectetur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nemo velit suscipit, cum ipsum
+                    nisi quisquam iure veniam, dolores officiis, eaque voluptas quod esse tempora obcaecati?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nemo velit suscipit, cum ipsum
+                    nisi quisquam iure veniam, dolores officiis, eaque voluptas quod esse tempora obcaecati?</p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <section class="bottom-section">
+            <div class="contact-info">
+                <p>
+                    What to Wear Weather<br>
+                    30 N 1st E<br>
+                    Preston, ID 83263<br>
+                    <br>
+                    999.999.9999<br>
+                    whattowearweatehr@gmail.com
+                </p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39664.962351007365!2d-111.90965085530496!3d42.09974027974851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549739288720"
+                allowfullscreen id="map"></iframe>
+        </section>
+        <div class="footer-bottom-row">
+            <p>
+                &copy; <span id="copyright-year"></span> What to Wear Weather | Veroncia C. Jacobs | <a href="">Terms of Use</a> | <span id="current-date"></span>
+            </p>
+        </div>
+        <span id="date"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
