@@ -33,7 +33,7 @@
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .grid figure:hover {
+    section img:hover {
         box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
     }
     li a {
