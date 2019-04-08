@@ -1,0 +1,50 @@
+@media screen and (min-width: 600px) {
+    /*header styles 640, 570*/
+    /*nav bar styles*/
+    nav button {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+    }   
+    nav ul.hide {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    /*li a {
+        padding: 10px 6.5px;
+    }*/
+    header {
+        font-size: 1.5em;
+    }
+    .town-name {
+        font-size: 2.3em;
+    }
+}
+
+@media screen and (min-width: 755px) {
+    header img {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    section img:hover {
+        box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+    }
+    li a {
+        padding: 10px;
+    }
+}
+
+/* Clearfix: Force and Element not to collapse*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
