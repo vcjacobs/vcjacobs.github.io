@@ -15,27 +15,24 @@ request.onload = function () {
 function showTowns(jsonObj) {
     var towns = jsonObj['towns'];
 
-
     for (var i = 0; i < towns.length; i++) {
-        if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
-            var myArticle = document.createElement('article');
-            var myPara1 = document.createElement('p');
-            var myPara2 = document.createElement('p');
-            var myPara3 = document.createElement('p');
-            var myPara4 = document.createElement('p');
-
-            myPara1.textContent = 'Motto: ' + towns[i].motto;
-            myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            myPara3.textContent = 'Current Population: ' + towns[i].currentPopulation;
-            myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
-
-
-            myArticle.appendChild(myPara1);
-            myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
-            myArticle.appendChild(myPara4);
-
-            section.appendChild(myArticle);
+        if (towns[i].name == "Fish Haven") {                 
+            document.getElementById("fishhaven-motto").innerHTML = towns[i].motto;
+            document.getElementById("fishhaven-year").innerHTML = towns[i].yearFounded;
+            document.getElementById("fishhaven-pop").innerHTML = towns[i].currentPopulation;
+            document.getElementById("fishhaven-rain").innerHTML =towns[i].averageRainfall;
+        }
+        else if (towns[i].name == "Preston") {
+            document.getElementById("preston-motto").innerHTML = towns[i].motto;
+            document.getElementById("preston-year").innerHTML = towns[i].yearFounded;
+            document.getElementById("preston-pop").innerHTML = towns[i].currentPopulation;
+            document.getElementById("preston-rain").innerHTML =towns[i].averageRainfall;
+        }
+        else if (towns[i].name == "Soda Springs") {
+            document.getElementById("sodasprings-motto").innerHTML = towns[i].motto;
+            document.getElementById("sodasprings-year").innerHTML = towns[i].yearFounded;
+            document.getElementById("sodasprings-pop").innerHTML = towns[i].currentPopulation;
+            document.getElementById("sodasprings-rain").innerHTML =towns[i].averageRainfall;
         }
     }
 }
