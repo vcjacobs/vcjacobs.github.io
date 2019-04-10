@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What to Wear Weather Home</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/site-logo-girl-resized.png" alt="site logo">
+        <h1>What to Wear Weather</h1>
+        <p class="motto">What should you wear today based on the weather?</p>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="current-page" href="index.html">Home</a></li>
+            <li><a href="fishahaven.html">Fish Haven</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main> 
+
+        <h2 class="town-name">Why you Should use What to Wear Weather</h2>
+        <p class="introPara">Before you get dressed in the morning, do you check the weather? The clothes we wear change based on the weather
+            outside.
+            If it is going to downpour, we'll want to wear a rain jacket or bring an umbrella. If it is going to be warm and
+            sunny, we'll want to wear short and sunglasses.
+            If it is going to be cooler weather, we'll want to wear a flannel shirt or sweater. What to Wear Weather gives you
+            hybrid weather-related fashion
+            information. You will never be caught out in a rainstorm without an umbrella again!
+        </p>
+        <h3>Find Weather Information for:</h3>
+        <section>
+                <a href="fishahaven.html"><img src="images/bearlake_medium.jpg" alt="Bear Lake in Fish Haven, Idaho"></a>
+                <a href="preston.html"><img src="images/prestonSnow_medium.jpg" alt="Snow Covered Mountians in Preston, Idaho"></a>
+                <a href="sodasprings.html"><img src="images/sodaSprings_medium.jpg" alt="Soda Springs Geyser in Soda Springs, Idaho"></a>
+                
+                <h2> <a href="fishahaven.html">Fish Haven</a></h2>
+                <h2><a href="preston.html">Preston</a></h2>
+                <h2> <a href="sodasprings.html">Soda Springs</a></h2>
+
+        </section>
+    </main>
+    <footer>
+        <section class="bottom-section">
+            <div class="contact-info">
+                <p>
+                    What to Wear Weather<br>
+                    30 N 1st E<br>
+                    Preston, ID 83263<br>
+                    <br>
+                    999.999.9999<br>
+                    whattowearweatehr@gmail.com
+                </p>
+            </div>
+        </section>
+        <div class="footer-bottom-row">
+            <p>
+                &copy; <span id="copyright-year"></span> What to Wear Weather | Veroncia C. Jacobs | <a href="">Terms of
+                    Use</a> | <span id="current-date"></span>
+            </p>
+        </div>
+        <span id="date"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/towndata.js"></script>
+</body>
+
+</html>
