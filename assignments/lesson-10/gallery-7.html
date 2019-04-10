@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Image Gallery</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka">
+    <link rel="stylesheet" href="styles/small-7.css">
+    <link rel="stylesheet" href="styles/large-7.css">
+    <link rel="stylesheet" href="styles/medium-7.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/site-logo-girl-resized.png" alt="site logo">
+        <h1>What to Wear Weather</h1>
+        <p class="motto">What should you wear today based on the weather?</p>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fishahaven.html">Fish Haven</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a class="current-page" href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="town-name">Gallery</h2>
+        <section class="grid">
+            <figure>
+                <img src="images/frozen-branch-resized-300.jpg" alt="Branch Covered in Ice">
+                <figcaption>Branch Covered in Ice</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mountain-lake-women-resized-300.jpg" alt="Women Standing by a Mountain Lake in Winter">
+                <figcaption>Women Standing by a Mountain Lake in Winter</figcaption>
+            </figure>
+            <figure>
+                <img src="images/snow-trees-road-resized-300.jpg" alt="Meandering Road Through Snow Covered Trees">
+                <figcaption>Meandering Road Through Snow Covered Trees</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mountaineer-snow-resized-300.jpg" alt="Hiking a Mountain in a Snow Storm">
+                <figcaption>Hiking a Mountain in a Snow Storm</figcaption>
+            </figure>
+            <figure>
+                <img src="images/frost-pattern-resized-300.jpg" alt="Pattern Created by Frost">
+                <figcaption>Pattern Created by Frost</figcaption>
+            </figure>
+            <figure>
+                <img src="images/women-walking-in-snow-resized-300.jpg" alt="Women Walking Down the Street in the Snow">
+                <figcaption>Women Walking Down the Street in the Snow</figcaption>
+            </figure>
+            <figure>
+                <img src="images/snow-cabin-resized-300.jpg" alt="cabin in snow covered mountains">
+                <figcaption>Cabin in Snow Covered Mountains</figcaption>
+            </figure>
+            <figure>
+                <img src="images/couple-snow-resized-300.jpg" alt="A Couple Sharing a Kiss as Snow Falls">
+                <figcaption>A Couple Sharing a Kiss as Snow Falls</figcaption>
+            </figure>
+            <figure>
+                <img src="images/frozen-berries-resized-300.jpg" alt="Frost Covered Berries">
+                <figcaption>Frost Covered Berries</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <section class="bottom-section">
+            <div class="contact-info">
+                <p>
+                    What to Wear Weather<br>
+                    30 N 1st E<br>
+                    Preston, ID 83263<br>
+                    <br>
+                    999.999.9999<br>
+                    whattowearweatehr@gmail.com
+                </p>
+            </div>
+        </section>
+        <div class="footer-bottom-row">
+            <p>
+                &copy; <span id="copyright-year"></span> What to Wear Weather | Veroncia C. Jacobs | <a href="">Terms of
+                    Use</a> | <span id="current-date"></span>
+            </p>
+        </div>
+        <span id="date"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston Town Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka">
+    <link rel="stylesheet" href="styles/small-7.css">
+    <link rel="stylesheet" href="styles/large-7.css">
+    <link rel="stylesheet" href="styles/medium-7.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/site-logo-girl-resized.png" alt="site logo">
+        <h1>What to Wear Weather</h1>
+        <p class="motto">What should you wear today based on the weather?</p>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fishahaven.html">Fish Haven</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a class="current-page" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Report Weather</h2>
+        <form action="thanks.html" method="GET">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullName" class="top">Full Name* <input type="text" id="fullName" name="fullName"
+                        pattern="[a-zA-Z_ ]{5,}" title="only accepts alpha characters with a minimum of five characters"
+                        required></label>
+                <label for="email" class="top">Email <input type="email" id="email" name="email"
+                        placeholder="someone@gmail.com"></label>
+                <label for="phoneNumber" class="top">Phone Number* <input type="tel" name="phoneNumber" id="phoneNumber"
+                        required></label>
+                <label for="zipCode" class="top">Zip Code* <input type="number" name="zipCode" id="zipCode"
+                        required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label for="stormDate" class="top">Storm Date <input type="date" name="stormDate"
+                        id="stormDate"></label>
+                <label for="stormChoice" class="top">Storm Type
+                    <input list="stormType" id="stormChoice" name="stormChoice" />
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+
+                <label for="stormSeverity" class="top">Storm Severity <input type="range" name="stormSeverity"
+                        id="stormSeverity" min="1" max="10"></label>
+
+                <label for="stormRegion" class="top">Storm Region
+                    <select name="subject">
+                        <option selected disabled>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaSprings">Soda Springs</option>
+                        <option value="fishHaven">Fish Haven</option>
+                    </select>
+                </label>
+
+                <div>User In-Danger Level</div>
+                <label class="sbs"><input type="radio" name="userDanger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="userDanger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="userDanger" value="no"> No</label>
+
+                <label for="additionalInfo" class="top">Additional Information or Comments <textarea
+                        name="additionalInfo" id="additionalInfo" cols="30" rows="10"></textarea></label>
+
+            </fieldset>
+
+            <div>
+                <input type="submit" value="Report Weather" class="submitBtn">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <section class="bottom-section">
+            <div class="contact-info">
+                <p>
+                    What to Wear Weather<br>
+                    30 N 1st E<br>
+                    Preston, ID 83263<br>
+                    <br>
+                    999.999.9999<br>
+                    whattowearweatehr@gmail.com
+                </p>
+            </div>
+
+        </section>
+        <div class="footer-bottom-row">
+            <p>
+                &copy; <span id="copyright-year"></span> What to Wear Weather | Veroncia C. Jacobs | <a href="">Terms of
+                    Use</a> | <span id="current-date"></span>
+            </p>
+        </div>
+        <span id="date"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
