@@ -1,6 +1,6 @@
 //Weather Summary
 var weatherRequest = new XMLHttpRequest();
-var apiURLstring = "http://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=28fb51caeb6d3a31f0a20efed1398c03&units=imperial"
+var apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=28fb51caeb6d3a31f0a20efed1398c03&units=imperial"
 
 weatherRequest.open('GET', apiURLstring, true);
 weatherRequest.send();
@@ -17,7 +17,7 @@ weatherRequest.onload =  function () {
 
 //5 Day Forecast
 var forecastRequest = new XMLHttpRequest();
-var apiForecastString = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=28fb51caeb6d3a31f0a20efed1398c03&units=imperial"
+var apiForecastString = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=28fb51caeb6d3a31f0a20efed1398c03&units=imperial"
 
 forecastRequest.open('GET', apiForecastString, true);
 forecastRequest.send();
