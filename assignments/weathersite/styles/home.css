@@ -6,14 +6,6 @@ main>section {
     justify-content: center;
 }
 
-p.introPara {
-    margin: 10px 150px;
-}
-
-h3 {
-    margin-left: 150px;
-}
-
 .grid figure:hover {
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
 }

@@ -109,6 +109,9 @@ figure {
     padding-left: 10px;
     padding-right: 10px;
     }
+.weather-summary > p {
+    margin: 10px 0px;
+}
 
 /* 5 day forecast styles*/
 
@@ -140,13 +143,6 @@ td {
     margin-bottom: 1em;
 }
 
-/*article styles*/
-
-article img {
-    width: 33%;
-    float: left;
-}
-
 /*gallery styles*/
 .grid {
     display: grid;
@@ -168,7 +164,8 @@ footer {
 }    
 
 #map {
-    width: 98%;
+    height: 20em;
+    width: 99%;
     
 }
 /* Clearfix: Force and Element not to collapse*/

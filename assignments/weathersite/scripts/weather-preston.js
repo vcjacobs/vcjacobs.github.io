@@ -25,7 +25,7 @@ forecastRequest.send();
 forecastRequest.onload =  function () {
     var forecastData = JSON.parse(forecastRequest.responseText);
 
-    console.log(forecastData);
+    //console.log(forecastData);
     // Day of Week
     var d = new Date();
     var weekday = new Array(7);
