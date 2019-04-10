@@ -29,13 +29,13 @@ forecastRequest.onload =  function () {
     // Day of Week
     var d = new Date();
     var weekday = new Array(7);
-    weekday[0] = "SUNDAY";
-    weekday[1] = "MONDAY";
-    weekday[2] = "TUESDAY";
-    weekday[3] = "WEDNESDAY";
-    weekday[4] = "THURSDAY";
-    weekday[5] = "FRIDAY";
-    weekday[6] = "SATURDAY";
+    weekday[0] = "Sun";
+    weekday[1] = "Mon";
+    weekday[2] = "Tue";
+    weekday[3] = "Wed";
+    weekday[4] = "Thu";
+    weekday[5] = "Fri";
+    weekday[6] = "Sat";
 
     var dayOfWeek = weekday[d.getDay()];
     
