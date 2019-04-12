@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <!-- <link rel="stylesheet" href="styles/home.css"> -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/temple-logo-white.png" alt="site logo">
+        <h1>Temple Inn & Suites</h1>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a class="current-page" href="reservations.html">Make a Reservation</a></li>
+            <li><a href="services.html">Services and Amenities</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Make a Reservation</h2>
+        <form action="thanks.html" method="GET">
+
+            <fieldset>
+                <legend>Registrant's Information</legend>
+                <label for="fullName" class="top">Full Name* <input type="text" id="fullName" name="fullName"
+                        pattern="[a-zA-Z_ ]{5,}" title="only accepts alpha characters with a minimum of five characters"
+                        required></label>
+                <label for="email" class="top">Email* <input type="email" id="email" name="email"
+                        placeholder="someone@gmail.com" required></label>
+                <label for="phoneNumber" class="top">Phone Number <input type="tel" name="phoneNumber"
+                        id="phoneNumber"></label>
+                <label for="zipCode" class="top">Zip Code <input type="number" name="zipCode" id="zipCode"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Room Information</legend>
+                <label for="destination" class="top">Destination*
+                    <input list="locations" id="destination" name="destination" required />
+                    <datalist id="locations">
+                        <option value="Salt Lake City, UT">
+                        <option value="Manti, UT">
+                        <option value="Idaho Falls, ID">
+                        <option value="Rexburg, ID">
+                    </datalist>
+                </label>
+                <label for="inDate" class="top">Check-In* <input type="date" name="inDate" id="inDate" required></label>
+                <label for="outDate" class="top">Check-Out <input type="date" name="outDate" id="outDate"></label>
+                <label for="numRooms" class="top">Number of Rooms* <input type="number" name="numRooms" id="numRooms"
+                        min="1" required></label>
+                <label for="typeRoom" class="top">Type of Room
+                    <select name="subject">
+                        <option selected disabled>Select Room...</option>
+                        <option value="queen">2 Queen Beds</option>
+                        <option value="queenView">2 Queen Beds Temple View</option>
+                        <option value="king">1 King Bed</option>
+                        <option value="kingView">1 King Bed Temple View</option>
+                        <option value="suite">1 King Bed Suite</option>
+                    </select>
+                </label>
+                <label for="additionalInfo" class="top">Special Accommodations Or Comments<textarea
+                        name="additionalInfo" id="additionalInfo" cols="30" rows="10"></textarea></label>
+            </fieldset>
+
+            <div>
+                <input type="submit" value="Reserve Room" class="submitBtn">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <section class="bottom-section">
+            <div class="contact-info">
+                <p>
+                    Temple Inn & Suites<br>
+                    800 Montgomery Ln #300,<br>
+                    Bethesda, MD 30814<br>
+                    <br>
+                    999.999.9999<br>
+                    whattowearweatehr@gmail.com
+                </p>
+            </div>
+        </section>
+        <div class="footer-bottom-row">
+            <p>
+                &copy; <span id="copyright-year"></span> What to Wear Weather | Veronica C. Jacobs | <a href="">Terms of
+                    Use</a> | <span id="current-date"></span>
+            </p>
+        </div>
+        <span id="date"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/towndata.js"></script>
+</body>
+
+</html>

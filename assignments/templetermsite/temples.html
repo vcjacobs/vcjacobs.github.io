@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <!-- <link rel="stylesheet" href="styles/home.css"> -->
+    <link rel="stylesheet" href="styles/temples.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/temple-logo-white.png" alt="site logo">
+        <h1>Temple Inn & Suites</h1>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="current-page" href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Make a Reservation</a></li>
+            <li><a href="services.html">Services and Amenities</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="page-heading">Temples in Popular Locations</h2>
+        
+        <!--this is the first row of content -->
+        <section class="odd-row"> 
+            <!--first row left column content here-->
+            <div class="temple-info">
+                <h3> <a href="temples.html">Salt Lake City, UT</a></h3>
+                <p>Address:</p>
+                <p>Telephone: </p>
+                <p>Email: </p>
+                <p>Services: </p>
+                <p>History:</p>
+                <p>Schedule: </p>
+                <p>Closures: <span id="closures"></span></p>
+                <p>Weather: <span id="weather"></span></p>
+            </div>
+            <!--first row right column content here -->
+            <div class="temple-image">
+                <img src="images/salt-lake-temple-landscape-300h.jpg" alt="Salt Lake Temple">
+            </div>
+        </section>
+
+        <!--this is the second row of content -->
+        <section class="even-row">
+            <!--second row left column content here-->
+            <div class="temple-image">
+                <img src="images/manti-temple-landscape-300h.jpg" alt="Manti Temple">
+            </div>
+            <!--second row right column content here -->
+            <div class="temple-info">
+                <h3> <a href="temples.html">Manti, UT</a></h3>
+                <p>Address:</p>
+                <p>Telephone: </p>
+                <p>Email: </p>
+                <p>Services: </p>
+                <p>History:</p>
+                <p>Schedule: </p>
+                <p>Closures: <span id="closures"></span></p>
+                <p>Weather: <span id="weather"></span></p>
+            </div>
+        </section>
+
+        <section class="odd-row">
+            <!--left column-->
+            <div class="temple-info">
+                <h3> <a href="temples.html">Idaho Falls, ID</a></h3>
+                <p>Address:</p>
+                <p>Telephone: </p>
+                <p>Email: </p>
+                <p>Services: </p>
+                <p>History:</p>
+                <p>Schedule: </p>
+                <p>Closures: <span id="closures"></span></p>
+                <p>Weather: <span id="weather"></span></p>
+            </div>
+            <!--right column-->
+            <div class="temple-image">
+                <img src="images/idaho-falls-temple-landscape-300h.jpg" alt="Idaho Falls Temple">
+            </div>
+        </section>
+
+        <section class="even-row">
+            <!--left column-->
+            <div class="temple-image">
+                <img src="images/rexburg-temple-landscape-300h.jpg" alt="Rexburg Temple">
+            </div>
+            <!--right column-->
+            <div class="temple-info">
+                <h3> <a href="temples.html">Rexburg, ID</a></h3>
+                <p>Address:</p>
+                <p>Telephone: </p>
+                <p>Email: </p>
+                <p>Services: </p>
+                <p>History:</p>
+                <p>Schedule: </p>
+                <p>Closures: <span id="closures"></span></p>
+                <p>Weather: <span id="weather"></span></p>
+            </div>
+        </section>
+          
+    </main>
+    <footer>
+        <section class="bottom-section">
+            <div class="contact-info">
+                <p>
+                    Temple Inn & Suites<br>
+                    800 Montgomery Ln #300,<br>
+                    Bethesda, MD 30814<br>
+                    <br>
+                    999.999.9999<br>
+                    whattowearweatehr@gmail.com
+                </p>
+            </div>
+        </section>
+        <div class="footer-bottom-row">
+            <p>
+                &copy; <span id="copyright-year"></span> What to Wear Weather | Veronica C. Jacobs | <a href="">Terms of
+                    Use</a> | <span id="current-date"></span>
+            </p>
+        </div>
+        <span id="date"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/towndata.js"></script>
+</body>
+
+</html>

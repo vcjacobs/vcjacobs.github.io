@@ -1,6 +1,6 @@
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #43c0f6;
+    border: 2.5px solid #defde0;
     border-radius: 10px;
     padding: .5rem 2%; 
 }
@@ -32,8 +32,8 @@ form label.sbs {
     color: #555;
 }
 form input.submitBtn {
-    border: none;
-    background-color: #F5ce28;
+    /* border: none; */
+    background-color: #fcf7de;
     color: black;
     border-radius: .75rem;
     padding: .75rem 1.5rem;

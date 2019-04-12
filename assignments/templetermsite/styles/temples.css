@@ -1,0 +1,34 @@
+/* .odd-row, .even-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.even-row {
+    background-color: #defde0;
+    padding: 5px;
+}
+
+.temple-info {
+    width: 60%;
+    flex: 3 0 15em;
+    margin: .5em;
+}
+
+.temple-image {
+    width: 30%;
+    flex: 1 0 15em;
+    margin: .5em;
+} */
+main>section.odd-row {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-items: left;
+    justify-content: center;
+}
+main>section.even-row {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-items: left;
+    justify-content: center;
+}
