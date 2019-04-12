@@ -20,15 +20,26 @@
     flex: 1 0 15em;
     margin: .5em;
 } */
-main>section.odd-row {
+
+main>section {
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: 600px 600px;
     justify-items: left;
     justify-content: center;
 }
+
 main>section.even-row {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    justify-items: left;
-    justify-content: center;
+    background-color: #defde0;
+}
+
+.temple-image {
+    place-self: center;
+}
+
+.even-row>.temple-image img {
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.odd-row>.temple-image img {
+    box-shadow: 7px -7px 10px rgba(0, 0, 0, 0.5);
 }
