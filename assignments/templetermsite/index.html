@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/site-logo-girl-resized.png" alt="site logo">
+        <h1>Temple Inn & Suites</h1>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="current-page" href="index.html">Home</a></li>
+            <li><a href="fishhaven.html">Temples</a></li>
+            <li><a href="preston.html">Make a Reservation</a></li>
+            <li><a href="sodasprings.html">Services and Amenities</a></li>
+            <li><a href="stormcenter.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main> 
+
+        <h2 class="town-name">Why you Should use What to Wear Weather</h2>
+        <p class="introPara">Before you get dressed in the morning, do you check the weather? The clothes we wear change based on the weather
+            outside.
+            If it is going to downpour, we'll want to wear a rain jacket or bring an umbrella. If it is going to be warm and
+            sunny, we'll want to wear short and sunglasses.
+            If it is going to be cooler weather, we'll want to wear a flannel shirt or sweater. What to Wear Weather gives you
+            hybrid weather-related fashion
+            information. You will never be caught out in a rainstorm without an umbrella again!
+        </p>
+        <h3>Find Weather Information for:</h3>
+        <section>
+            <div>
+                <a href="fishhaven.html"><img src="images/bearlake_medium.jpg" alt="Bear Lake in Fish Haven, Idaho"></a>
+                <h2> <a href="fishhaven.html">Fish Haven</a></h2>
+                <p>Motto: <span id="fishhaven-motto"></span></p>
+                <p>Year Founded: <span id="fishhaven-year"></span></p>
+                <p>Current Population: <span id="fishhaven-pop"></span></p>
+                <p>Average Rainfall: <span id="fishhaven-rain"></span></p>
+            </div>
+            <div>
+                <a href="preston.html"><img src="images/prestonSnow_medium.jpg" alt="Snow Covered Mountians in Preston, Idaho"></a>
+                <h2><a href="preston.html">Preston</a></h2>
+                <p>Motto: <span id="preston-motto"></span></p>
+                <p>Year Founded: <span id="preston-year"></span></p>
+                <p>Current Population: <span id="preston-pop"></span></p>
+                <p>Average Rainfall: <span id="preston-rain"></span></p>
+            </div>
+            <div>
+                <a href="sodasprings.html"><img src="images/sodaSprings_medium.jpg" alt="Soda Springs Geyser in Soda Springs, Idaho"></a>
+                <h2> <a href="sodasprings.html">Soda Springs</a></h2>
+                <p>Motto: <span id="sodasprings-motto"></span></p>
+                <p>Year Founded: <span id="sodasprings-year"></span></p>
+                <p>Current Population: <span id="sodasprings-pop"></span></p>
+                <p>Average Rainfall: <span id="sodasprings-rain"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bottom-section">
+            <div class="contact-info">
+                <p>
+                    What to Wear Weather<br>
+                    30 N 1st E<br>
+                    Preston, ID 83263<br>
+                    <br>
+                    999.999.9999<br>
+                    whattowearweatehr@gmail.com
+                </p>
+            </div>
+        </section>
+        <div class="footer-bottom-row">
+            <p>
+                &copy; <span id="copyright-year"></span> What to Wear Weather | Veronica C. Jacobs | <a href="">Terms of
+                    Use</a> | <span id="current-date"></span>
+            </p>
+        </div>
+        <span id="date"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/towndata.js"></script>
+</body>
+
+</html>
