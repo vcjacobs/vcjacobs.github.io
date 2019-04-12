@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <!-- <link rel="stylesheet" href="styles/home.css"> -->
+</head>
+
+<body>
+    <header>
+        <img src="images/temple-logo-white.png" alt="site logo">
+        <h1>Temple Inn & Suites</h1>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html">Make a Reservation</a></li>
+            <li><a class="current-page" href="services.html">Services and Amenities</a></li>
+            <!-- <ul><li>Receptions</li><li>Full-Time Temple Missionaries</li></ul> -->
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img src="images/flowers-banner.jpg" alt="Pink and Yellow Tulips on Temple Grounds" class="hero-image">
+        <h2 class="page-heading">Services and Amenities</h2>
+        <h3>Specialized Services</h3>
+        <ul>
+            <li> Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to
+                change to and from church clothes</li>
+            <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+            <li>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</li>
+            <li> Temple history themed reception and sitting area</li>
+            <li> A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for
+                food preparation and serving</li>
+            <li> A family search center that supports family search and ordinance work</li>
+        </ul>
+        <h3>Free Amenities</h3>
+        <ul>
+            <li>Breakfast</li>
+            <li>Exercise/workout room</li>
+            <li>Indoor pool</li>
+            <li>WiFi high-speed internet access and smart TVs</li>
+            <li>Parking</li>
+            <li>Temple shuttle</li>
+            <li>Family history consultation and family ordinance card service</li>
+        </ul>
+        <div>
+            <a href="receptions.html"><img src="images/elderly-couples-temple-resized.jpg" alt="An Elderly Couple Walking to the Cochabamba Bolivia Temple"></a>
+            <h2> <a href="receptions.html">Wedding Reception Hall</a></h2>
+            <p>Getting married? We've got you covered. Each hotel has several large reception halls. We can help you setup and cater your event.</p>
+        </div>
+         
+        <div>
+            <a href="missionarySuites.html"><img src="images/elderly-couples-temple-resized.jpg" alt="An Elderly Couple Walking to the Cochabamba Bolivia Temple"></a>
+            <h2> <a href="missionarySuites.html">Temple Missionaries</a></h2>
+            <p>We offer long-term stay accommodations for full-time temple missionaries.
+            Our luxiorious suites offer everything you need to make your time serving a breeze.</p>
+        </div>
+    </main>
+    <footer>
+        <section class="bottom-section">
+            <div class="contact-info">
+                <p>
+                    Temple Inn & Suites<br>
+                    4800 Montgomery Ln #300,<br>
+                    Bethesda, MD 20814<br>
+                    <br>
+                    301.123.4567<br>
+                    templeinn@gmail.com
+                </p>
+            </div>
+        </section>
+        <div class="footer-bottom-row">
+            <p>
+                &copy; <span id="copyright-year"></span> What to Wear Weather | Veronica C. Jacobs | <a href="">Terms of
+                    Use</a> | <span id="current-date"></span>
+            </p>
+        </div>
+        <span id="date"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/towndata.js"></script>
+</body>
+
+</html>

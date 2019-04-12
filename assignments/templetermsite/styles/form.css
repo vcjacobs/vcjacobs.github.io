@@ -26,13 +26,7 @@ form label.top input, form label.top select, form label.top textarea {
     max-width: 20rem;
     background-color: rgba(0,0,0,0.1);
 }
-form label.sbs {
-    display: block;
-    padding: .4rem;
-    color: #555;
-}
 form input.submitBtn {
-    /* border: none; */
     background-color: #fcf7de;
     color: black;
     border-radius: .75rem;
