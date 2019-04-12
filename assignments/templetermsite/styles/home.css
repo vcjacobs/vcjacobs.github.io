@@ -1,0 +1,49 @@
+main>section {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-column-gap: 15px;
+    justify-items: left;
+    justify-content: center;
+}
+
+.grid figure:hover {
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 930px){
+    main>section {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        justify-items: left;
+        justify-content: center;
+    }
+    p.introPara {
+        margin: 10px;
+    }
+    h3 {
+        margin-left: 10px;
+    }
+}    
+@media screen and (max-width: 615px) {
+    main>section {
+        display: grid;
+        grid-template-columns: 300px;
+        justify-items: left;
+        justify-content: center;
+    }
+    p.introPara {
+        margin: 10px;
+    }
+    h3 {
+        margin-left: 10px;
+    }
+}

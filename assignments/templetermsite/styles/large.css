@@ -1,0 +1,55 @@
+@media screen and (min-width: 600px) {
+    /*header styles 640, 570*/
+    header {
+        display: flex;
+    }
+    /*nav bar styles*/
+    nav button {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+    }   
+    nav ul.hide {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    li a {
+        padding: 41px 10px;
+    }
+    /*li a {
+        padding: 10px 6.5px;
+    }*/
+    header {
+        
+    }
+    
+}
+
+@media screen and (min-width: 755px) {
+    main {
+        margin: 0px 100px;
+    }
+    /* header img {
+        height: 200px;
+    } */
+}
+
+@media screen and (min-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    section img:hover {
+        box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+}
+
+/* Clearfix: Force and Element not to collapse*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

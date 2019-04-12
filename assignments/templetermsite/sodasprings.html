@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soda Springs Town Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Vidaloka">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/site-logo-girl-resized.png" alt="site logo">
+        <h1>What to Wear Weather</h1>
+        <p class="motto">What should you wear today based on the weather?</p>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a class="current-page" href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="town-name">Soda Springs, ID</h2>
+        <section class="banner">
+            <figure>
+                    <img src="images/sodasprings-banner-large.jpg" alt="Soda Springs" class="hero-image" sizes="100vw"
+                    srcset="images/sodasprings-banner-small.jpg 600w,
+                            images/sodasprings-banner-large.jpg 1200w 
+                            "
+                >
+            </figure>
+            <div class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Condition: <span id="weather-condition"></span></p>
+                <p>Temperture: <span id="current-temp"></span>&deg; F</p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                <p>Humidity: <span id="humidity"></span> %</p>
+                
+            </div>
+        </section>
+        <section>
+            <div class="five-day-forecast">
+                <h3>5 Day Forecast</h3>
+                <table>
+                    <tr>
+                        <th><span id="day1Name"></span></th>
+                        <th><span id="day2Name"></span></th>
+                        <th><span id="day3Name"></span></th>
+                        <th><span id="day4Name"></span></th>
+                        <th><span id="day5Name"></span></th>
+                    </tr>
+                    <tr>
+                        <td><img src="images/bw-long-sleeve-resized.png" alt="long sleeve shirt" class="forecast-image"><br><span id="day1Temp"></span>&deg; F</td>
+                        <td><img src="images/solid-black-sunglasses.png" alt="sunglasses" class="forecast-image" id="sunglasses"><br><span id="day2Temp"></span>&deg; F</td>
+                        <td><img src="images/simple-umbrella-resized.png" alt="umbrella" class="forecast-image"><br><span id="day3Temp"></span>&deg; F</td>
+                        <td><img src="images/bw-shirt-resized.png" alt="t-shirt" class="forecast-image"><br><span id="day4Temp"></span>&deg; F</td>
+                        <td><img src="images/bw-sweater-resized.png" alt="sweater" class="forecast-image"><br><span id="day5Temp"></span>&deg; F</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <article class="middle-section">
+            <div class="article-text">
+                <h3>About Soda Springs</h3>
+                <p> From <a href="https://en.wikipedia.org/wiki/Soda_Springs,_Idaho">Wikipedia</a>, "Soda Springs is a city in Caribou
+                County, Idaho, United States. Its population was 3,058 at the 2010 census.
+                The city has been the county seat of Caribou County since the county was organized in 1919. In the 1860s, Soda Springs
+                served as the seat of Oneida County."
+                <br><br>
+                From <a href="http://cms5.revize.com/revize/sodasprings/city/index.php">SodaSpringsID.com</a>, "Soda Springs is a
+                community rich in history and overflowing with the potential for growth and expansion. It has the safety, friendliness and support of a small town
+                while also offering a prime location for industry, agriculture and business. Soda Springs features five beautiful parks
+                that offer playgrounds, pavilions, hiking, biking and cross country ski trails surrounded in nature, as well as an
+                18-hole disc golf course. Within 5 to 20 minutes of Soda Springs is access to swimming, fishing, boating, snow
+                machining, camping, ATV trails, bird watching and hunting.
+                <br><br>
+                As a full service community Soda Springs offers wonderful educational opportunities for our youth and a graduation rate
+                of 92.4%; Caribou Memorial Hospital, which is ranked in the top 100 Critical Care Facilities in the country; physicians,
+                dentists, an eye doctor, grocery stores, pharmacies, salons, walk-in and drive-in theaters, gift shops, hardware stores,
+                ranch stores, household goods stores, mechanic and service stations, gas stations, restaurants and so much more.
+                <br><br>
+                In addition to Soda Springs’ shopping and recreational offerings its close proximity to major cities such as Pocatello,
+                Idaho Falls, Logan Utah and Jackson Hole Wyoming; make our community the perfect hub for adventure while providing its
+                residents with an abundance and variety of shopping and recreational opportunities that are all within an hour or two
+                drive."</p>
+            </div>
+        </article>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.96064633286!2d-111.62379147650239!3d42.661407516812865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276!5e0!3m2!1sen!2sus!4v1554874434917!5m2!1sen!2sus" allowfullscreen id="map"></iframe>
+    </main>
+    <footer>
+        <section class="bottom-section">
+            <div class="contact-info">
+                <p>
+                    What to Wear Weather<br>
+                    30 N 1st E<br>
+                    Preston, ID 83263<br>
+                    <br>
+                    999.999.9999<br>
+                    whattowearweatehr@gmail.com
+                </p>
+            </div>
+           
+        </section>
+        <div class="footer-bottom-row">
+            <p>
+                &copy; <span id="copyright-year"></span> What to Wear Weather | Veronica C. Jacobs | <a href="">Terms of Use</a> | <span id="current-date"></span>
+            </p>
+        </div>
+        <span id="date"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather-sodasprings.js"></script>
+  
+</body>
+
+</html>
