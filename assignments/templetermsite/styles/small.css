@@ -12,51 +12,22 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-color: #def3fd;
-    
     display: flex;
 }
 
 header h1 {
     font-size: .91em;
     padding: 15px 0px;
-    align-items: flex-end;
+    
 }
 
 header img {
     height: 75px;
-    float: left;
+    
     margin: 15px;
 }
-/* header {
-    background-color: #def3fd;
-    text-align: left;
-    height: 150px;
-    padding: 10px;
-    line-height: 32px;
-}
-
-header img {
-    height: 150px;
-    margin: 10px;
-    float: left;
-}
-
-header p {
-    line-height: 20px;
-    font-size: .9em;
-} */
 
 /* Nav bar styles*/
-nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none; 
-    font-size: 1.3em;
-}
-
-nav {
-    display: flex;
-}
 
 nav ul {
     list-style-type: none;
@@ -80,35 +51,12 @@ nav a:hover {
 
 li a {
     display: flex;
-    padding: 0px;
+    padding: 40px 10px;
 }
 
 li a.current-page {
     background-color: #ffffff;
-    
 }
-
-/* nav button {
-    margin: .2rem 2%;
-    background-color: transparent;
-    border: none; 
-    font-size: 1.3em;
-}
-
-nav {
-    background-color: #def3fd;
-}
-
-nav h2 {
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-}
-
-
-
-
-} */
 
 /*main styles*/
 
@@ -121,75 +69,11 @@ main {
     align-items: center;
  }  
 
-.town-name {
+.action-call {
     text-align: center;
     font-size: 1.75em;
 }
 
-figure {
-    margin: 0;
-}
-
-.hero-image {
-    width: 100%;
-
-}
-
-.banner {
-    position: relative;
-  }
-  
-.weather-summary {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: rgba(248, 27, 132, 0.7);
-    padding-left: 10px;
-    padding-right: 10px;
-    }
-.weather-summary > p {
-    margin: 10px 0px;
-}
-
-/* 5 day forecast styles*/
-
-.five-day-forecast {
-    text-align: center;
-}
-
-table, th, td {
-    border: 2px solid black;
-    border-collapse: collapse;
-    padding: 15px;
-    margin: auto;
-}
-
-th {
-    background-color: #defde0;
-    color: #f1f0ed;
-}
-
-td {
-    vertical-align: bottom;
-}
-
-.forecast-image {
-    width: 75px;
-}
-
-#sunglasses {
-    margin-bottom: 1em;
-}
-
-/*gallery styles*/
-.grid {
-    display: grid;
-    grid-gap: 15px;
-}
-
-figure img {
-    width: 100%;
-}
 
 /*footer styles*/
 
@@ -201,11 +85,6 @@ footer {
     justify-content: space-between;
 }    
 
-#map {
-    height: 20em;
-    width: 99%;
-    
-}
 /* Clearfix: Force and Element not to collapse*/
 .clearfix:after {
     content: "";
@@ -214,13 +93,3 @@ footer {
 }
 
 /* for small exceptions, stuff I want ONLY on a small view */
-
-@media screen and (max-width: 600px) {
-    .five-day-forecast {
-        display: none
-    }
-    .grid {
-        grid-template-columns: 1fr;
-    }
-        
-}
