@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Serif+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small-1.css">
+    <link rel="stylesheet" href="styles/large-1.css">
+    <!-- <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/home.css"> -->
+</head>
+
+<body>
+    <header>
+        <img src="images/temple-logo-white.png" alt="site logo">
+        <h1>Temple <br> Inn & Suites</h1>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&equiv; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a class="current-page" href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservation.html">Make a Reservation</a></li>
+                <li><a href="services.html">Services and Amenities</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <img src="images/manti-banner.jpg" alt="Manti Utah Temple" class="fullwidth">
+        <h2 class="action-call">Make a Reservation Today!</h2>
+        <h3>About Us</h3>
+        <p class="introPara">The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages
+            specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the
+            world. The owner-operated company caters to temple workers, patrons, and their families by providing specialized
+            services and accommodations that meet the needs of those patrons. The hotel accommodations and services are
+            available to anyone willing to abide by the terms and policies outlined by the company. The overall goal of the
+            website project is to promote and provide information about the specialized services that this hotel chain offers to
+            meet the needs of temple patrons who come to serve in the temple or who participate in events such as sealings,
+            weddings, receptions, and youth trips. The website should reflect the Church culture and be designed to support a
+            temple oriented theme as well as the concept of being a haven of comfort and accessibility.
+        </p>
+        <!-- <h3>Find Weather Information for:</h3>
+        <section>
+            <div>
+                <a href="fishhaven.html"><img src="images/bearlake_medium.jpg" alt="Bear Lake in Fish Haven, Idaho"></a>
+                <h2> <a href="fishhaven.html">Fish Haven</a></h2>
+                <p>Motto: <span id="fishhaven-motto"></span></p>
+                <p>Year Founded: <span id="fishhaven-year"></span></p>
+                <p>Current Population: <span id="fishhaven-pop"></span></p>
+                <p>Average Rainfall: <span id="fishhaven-rain"></span></p>
+            </div>
+            <div>
+                <a href="preston.html"><img src="images/prestonSnow_medium.jpg" alt="Snow Covered Mountians in Preston, Idaho"></a>
+                <h2><a href="preston.html">Preston</a></h2>
+                <p>Motto: <span id="preston-motto"></span></p>
+                <p>Year Founded: <span id="preston-year"></span></p>
+                <p>Current Population: <span id="preston-pop"></span></p>
+                <p>Average Rainfall: <span id="preston-rain"></span></p>
+            </div>
+            <div>
+                <a href="sodasprings.html"><img src="images/sodaSprings_medium.jpg" alt="Soda Springs Geyser in Soda Springs, Idaho"></a>
+                <h2> <a href="sodasprings.html">Soda Springs</a></h2>
+                <p>Motto: <span id="sodasprings-motto"></span></p>
+                <p>Year Founded: <span id="sodasprings-year"></span></p>
+                <p>Current Population: <span id="sodasprings-pop"></span></p>
+                <p>Average Rainfall: <span id="sodasprings-rain"></span></p>
+            </div>
+        </section> -->
+    </main>
+    <footer>
+        <section class="bottom-section">
+            <div class="contact-info">
+                <p>
+                    Temple Inn & Suites<br>
+                    800 Montgomery Ln #300,<br>
+                    Bethesda, MD 20814<br>
+                    <br>
+                    999.999.9999<br>
+                    templeinn@gmail.com
+                </p>
+            </div>
+        </section>
+        <div class="footer-bottom-row">
+            <p>
+                &copy; <span id="copyright-year"></span> Temple Inn & Suites | Veronica C. Jacobs | <a href="">Terms of
+                    Use</a> | <span id="current-date"></span>
+            </p>
+        </div>
+        <span id="date"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/towndata.js"></script>
+</body>
+
+</html>
