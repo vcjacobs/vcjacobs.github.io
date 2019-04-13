@@ -43,3 +43,8 @@ main>section.even-row {
 .odd-row>.temple-image img {
     box-shadow: 7px -7px 10px rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (max-width: 600px) {
+    main>section {
+        grid-template-columns: 600px;
+    }
