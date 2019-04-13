@@ -1,7 +1,7 @@
 main>section {
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    grid-column-gap: 15px;
+    grid-column-gap: 40px;
     justify-items: left;
     justify-content: center;
 }

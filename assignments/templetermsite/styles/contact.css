@@ -1,0 +1,43 @@
+form fieldset {
+    width: 350px;
+}
+
+form {
+    grid-area: form;
+}
+
+section.bottom-section {
+    grid-area: contact-info;
+}
+
+iframe {
+    grid-area: map;
+    width: 350px;
+    height: 350px;
+    border: none;
+}
+
+main {
+    
+    display: grid;
+    grid-template-areas: "form map" "form contact-info";
+    place-items: center;
+}
+
+@media screen and (max-width: 985px) {
+    main {
+        margin: 10px 40px;
+    }
+
+@media screen and (max-width: 800px) {
+    form fieldset, iframe {
+        width: 280px;
+    }
+    main {
+        margin: 1px;
+        grid-template-areas: 
+        "form"
+        "map"
+        "contact-info";
+    }
+}
